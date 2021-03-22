@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Consultas</title>
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/bootstrap-datetimepicker.min.css">
+        <link rel="stylesheet" href="../css/bootstrap-datepicker3.css"/>
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a href="../index.php" class="navbar-brand"><img alt="" height="80px" src="../img/tecnmBlanco.png">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"><!--aqui se pueden poner HOME--> <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><!--aqui se pueden poner herrramientas --></a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <a href="#" class="navbar-brand"><img alt="" height="80px" src="../img/teshlogo.png"></a>
+            </form>
+          </div>
+        </nav>
+    </br>
+</br>
+</br>
+
+<div class="bootstrap-iso">
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+     <form action="" class="form-horizontal" method="post">
+      <div class="form-group ">
+       <label class="control-label col-sm-2 requiredField" for="date">
+        CONSULTA AQUÍ POR FECHAS
+        <span class="asteriskField">
+        </span>
+       </label>
+       <div class="col-sm-10">
+        <div class="input-group">
+         <div class="input-group-addon">
+          <i class="fa fa-calendar">
+          </i>
+         </div>
+         <input class="form-control" id="date" name="date" placeholder="Mes/Día/Año" type="text"/>
+        </div>
+       </div>
+      </div>
+      <div class="form-group">
+       <div class="col-sm-10 col-sm-offset-2">
+        <input name="_honey" style="display:none" type="text"/>
+        <button class="btn btn-primary " name="submit" type="submit">
+         CONSULTAR
+        </button>
+       </div>
+      </div>
+     </form>
+    </div>
+   </div>
+  </div>
+ </div>
+
+<!-- Extra JavaScript/CSS added manually in "Settings" tab -->
+<!-- Include jQuery -->
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="../js/jquery-1.11.3.min"></script>
+<!-- Include Date Range Picker -->
+
+<script type="text/javascript" src="../js/bootstrap-datepicker.min.js"></script>
+
+
+<script>
+	$(document).ready(function(){
+		var date_input=$('input[name="date"]'); //our date input has the name "date"
+		var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+		date_input.datepicker({
+			format: 'mm/dd/yyyy',
+			container: container,
+			todayHighlight: true,
+			autoclose: true,
+		})
+	})
+</script>
+
+</body>
+
+</html>

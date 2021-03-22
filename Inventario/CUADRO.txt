@@ -1,0 +1,7 @@
+RECUADRO!!
+
+#advanced-search-form hr{
+  margin-top: 38px;
+  margin-bottom: 54px;
+  margin-left:3px;
+  border: 1px solid #cccccc;

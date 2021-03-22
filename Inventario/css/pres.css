@@ -1,0 +1,45 @@
+#main-container{
+    margin: 150px auto;
+    width: 900px;
+}
+section{
+    
+    width: 33%;
+   
+    float: left;
+}
+table{
+    background-color: white;
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+}
+th,td{
+    border: solid 1px rgb(87, 85, 85);
+    height: 50px;
+    width: 150px;
+    
+}
+button{
+    color: white;
+    background-color: rgb(226, 9, 9);
+    width: 150px;
+    border-color: rgb(87, 85, 85);
+   
+}
+thead{
+    background-color: #246355;
+    border-bottom: solid 5px #0F362D;
+    color: white;
+}
+tr:nth-child(even){
+    background-color:#ddd;
+}
+tr:hover td{
+    background-color: #369681;
+    color: white;
+}
+.centro{
+    
+    width: 40%;
+}
